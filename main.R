@@ -4,7 +4,7 @@ require(tidyverse)
 require(reshape2) 
 require(depthTools)
 
-# MBD
+# MBD (Modified Band Depth)
 pinch.mbd <- MBD(t(pinch))
 pinch.dat <- data.frame(t(pinch), id = seq_len(20), MBD = c(pinch.mbd$MBD),
                         check.names = FALSE)
